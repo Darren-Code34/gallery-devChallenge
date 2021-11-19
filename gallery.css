@@ -1,0 +1,171 @@
+body{
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.photo-user{
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.user-name{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.user-location{
+    text-align: center;
+    margin-top: 0;
+    font-size: 10px;
+    color: #A9A9A9;
+    
+}
+
+.data-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.data-user p{
+    text-align: center;
+    font-size: 12px;
+    color: #4E5150;
+}
+
+.data-user p span{
+    font-size: 12px;
+    color:  #BDBDBD;
+}
+
+.data-post, .data-followers, .data-following{
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: #E5E5E5;
+    width: 80px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+
+.data-following{
+    margin-right: 0;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    
+}
+
+.img1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border-radius: 15px;
+    width: 115px;
+    height: 115px;
+}
+
+.img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    border-radius: 15px;
+    width: 245px;
+    height: 115px;
+}
+
+.img3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    border-radius: 15px;
+    width: 235px;
+    height: 115px;
+}
+
+.img4{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 15px;
+    width: 125px;
+    height: 235px;
+}
+
+.img5{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    border-radius: 15px;
+    width: 115px;
+    height: 115px;
+}
+
+.img6{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    border-radius: 15px;
+    width: 115px;
+    height: 115px;
+}
+
+footer{
+    position: relative ;
+    bottom: -60px;
+    text-align: center;
+    color: #B9BDCF;
+    font-size: 14px;
+}
+
+footer p a{
+    font-weight: 700;
+    color: #B9BDCF;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:900px){
+
+    .photo-user{
+        width: 150px;
+        height: auto;
+    }
+
+    .container{
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(3, 180px);
+        
+    } 
+    
+    .img1, .img5, .img6{
+        width: 175px;
+        height: 175px;
+    }
+
+    .img2{
+        width: 365px;
+        height: 175px;
+    }
+    
+    .img3{
+        width: 355px;
+        height: 175px;
+    }
+
+    .img4{
+        width: 185px;
+        height: 355px;
+    }
+}
